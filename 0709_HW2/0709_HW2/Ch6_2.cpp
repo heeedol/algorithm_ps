@@ -3,7 +3,7 @@
 #include <stdio.h>
 // '시계맞추기'문제 (pg.168)의 해답입니다.
 using namespace std;
-const int INF = 9999, SWITCHES = 10, CLOCKS = 16;
+const int INF = 9999, SWITCHES = 10, CLOCKS = 16; // INF 는 굉장히 큰 수, SWITCHES, CLOCKS는 스위치, 시계 개수
 const char linked[SWITCHES][CLOCKS + 1] = {
 		"xxx.............",
 		"...x...x.x.x....",
@@ -21,7 +21,7 @@ bool areAligned(const vector<int>& clocks) {
 		if (clocks[i] != 12) return false;
 	}
 	return true;
-}
+}// 모두 12면 출력
 void push(vector<int>& clocks, int swtch) {
 	for (int clock = 0; clock < CLOCKS; ++clock) {
 		if (linked[swtch][clock] == 'x') {
