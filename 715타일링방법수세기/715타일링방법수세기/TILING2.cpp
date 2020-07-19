@@ -12,7 +12,13 @@ int tiling(int width) {
 	//Á¡È­½Ä
 	return ret = (tiling(width - 2) + tiling(width - 1)) % MOD;
 }
-
+int asymmetric(int width) {
+	if (width % 2 == 1)
+		return (tiling(width) - tiling(width / 2) + MOD) % MOD;
+	int ret = tiling(width);
+	ret = (ret - tiling(width / 2) + MOD) % MOD;
+	ret = (ret - tiling(width / 2 - 1) + MOD) % MOD;
+}
 int main() {
 	for (int i = 0; i < 101; i++) {
 		cache[i] = -1;
