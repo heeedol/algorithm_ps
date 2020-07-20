@@ -45,6 +45,7 @@ void init() {
 	int tmp;
 	int count;
 	cin >> n >> d >> p;
+	
 	for (int i = 0; i < n; ++i) {
 		count = 0;
 		for (int j = 0; j < n; ++j) {
@@ -54,6 +55,7 @@ void init() {
 		}
 		deg[i] = count;
 	}
+	
 	for (int i = 0; i < 51; i++) {
 		for (int j = 0; j < 101; j++) {
 			cache[i][j] = -1;
@@ -69,11 +71,11 @@ void main() {
 
 	for (int i = 0; i < n; ++i) {
 		for (int j = 0; j < n; ++j) {
-			cout << connected[i][j] << " ";
+			//cout << connected[i][j] << " ";
 		}
 		cout << endl;
 		cout << endl;
-		cout << deg[i];
+		//cout << deg[i];
 	}
 	int ttmp;
 	cin >> t;
@@ -83,8 +85,9 @@ void main() {
 		T.push_back(ttmp);
 	}
 	for (int i = 0; i < t; i++) {
-		cout << T[i] << endl;
-		cout << search2(T[i], 1) << " ";
+		//cout << T[i] << endl;
+		q = T[i];
+		cout << search2(p, 0) << " ";
 	}
 }
 
