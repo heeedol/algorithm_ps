@@ -1,15 +1,12 @@
-/*#include <iostream>
+#include <iostream>
 #include <algorithm>
 using namespace std;
 int cache[100][100];
 
 int climb(int days, int climbed) {
 	//±âÀú»ç·Ê
-	if (days == 1) {
-		if (climbed < 2) return 2;
-		if (climbed == 2) return 1;
-		if (climbed > 2) return 0;
-	}
+
+	if (days == 0) return climbed <= 0 ? 1 : 0;
 
 	int& ret = cache[days][climbed];
 	if (ret != -1) return ret;
@@ -31,4 +28,4 @@ int main() {
 		cout << climb(m, n)/(double)pow(2,m) << endl;
 	}
 	return 0;
-}*/
+}
