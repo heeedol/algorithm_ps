@@ -3,6 +3,7 @@
 #include<queue>
 #include"RNG.h"
 using namespace std;
+
 struct RNG {
 	unsigned seed;
 	RNG(): seed(1983){}
