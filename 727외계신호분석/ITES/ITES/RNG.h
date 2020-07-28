@@ -1,4 +1,4 @@
-/*#pragma once
+#pragma once
 #include<vector>
 #include<iostream>
 #include<math.h>
@@ -11,5 +11,3 @@ public:
 private:
 	vector<int> A;
 };
-
-*/

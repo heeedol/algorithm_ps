@@ -1,4 +1,4 @@
-/*#include "RNG.h"
+#include "RNG.h"
 
 RNG::RNG(int n) {
 	A.push_back(1983);
@@ -13,4 +13,3 @@ void RNG::print() {
 	}
 	cout << endl;
 }
-*/
