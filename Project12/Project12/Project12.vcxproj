@@ -138,9 +138,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="GameBoard.cpp" />
+    <ClCompile Include="init.cpp" />
     <ClCompile Include="소스.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="GameBoard.h" />
     <ClInclude Include="init.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
